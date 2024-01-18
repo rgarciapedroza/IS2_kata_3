@@ -31,20 +31,20 @@ public class Student {
 
     @Override
     public boolean equals(Object o){
-        return o != null && getClass() == o.getClass() && (this == o || equals((Student)o));
+        return o!= null && getClass() == o.getClass() && (this == o || equals((Student)o));
     }
 
     @Override
     public int hashCode(){
-        return Objects.hash(age, gender, height, weight);
+        return Objects.hash(age, gender, weight, height);
     }
 
     @Override
     public String toString(){
-        return "Student{" +
-                " age: " + getAge() +
-                " gender: " + getGender() +
-                " height: " + getHeight() +
-                " weight: " + getWeight() + "}";
+        return "Student { " +
+                " Edad: " + getAge() +
+                " Género: " + getGender() +
+                " Altura: " + getHeight() +
+                " Peso: " + getWeight() + "}";
     }
 }
